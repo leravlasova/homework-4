@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let max = +prompt("Введите высоту ёлочки");
+        let star = " ";
+        for (let i = 1; i <= max; i++) {
+            for (let j = 1; j <= i; j++) {
+                star += "*";
+            }
+            star += "\n";
+        }
+        alert(star);
+    </script>
+</body>
+</html>
