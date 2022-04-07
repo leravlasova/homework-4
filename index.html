@@ -8,15 +8,25 @@
 </head>
 <body>
     <script>
-      let max = +prompt("Введите высоту ёлочки");
-        let star = " ";
-        for (let i = 1; i <= max; i++) {
-            for (let j = 1; j <= i; j++) {
-                star += "*";
-            }
-            star += "\n";
-        }
-        alert(star);
+   
+
+    let i = 0,
+    j = 0;
+    let max = +prompt('Высота ёлочки');
+    let space = "",
+    star = "";
+    let tree = "";
+
+    while (i < max) {
+        space = "";
+        star = "";
+        for (j = 0; j < max - i; j++) space += " ";
+        for (j = 0; j < 2 * i + 1; j++) star += "*";
+        tree += space + star + "\n";
+        alert(tree );
+        i++;
+    }
+
     </script>
 </body>
 </html>
